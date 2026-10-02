@@ -1,0 +1,49 @@
+/* ============ INTRO + IPHONE 12 : сдержанный синий ============ */
+#intro{position:fixed;inset:0;z-index:100;background:radial-gradient(1000px 600px at 50% 20%,#14213A,#0B0E14 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}
+.intro-bg-grid{position:absolute;inset:0;background-image:linear-gradient(#ffffff0d 1px,transparent 1px),linear-gradient(90deg,#ffffff0d 1px,transparent 1px);background-size:60px 60px}
+.intro-top{position:absolute;top:18px;letter-spacing:.28em;font-size:12px;color:var(--muted)}
+#iphone-scene{perspective:1400px;position:relative;z-index:2}
+.glow{position:absolute;left:50%;top:50%;width:520px;height:520px;transform:translate(-50%,-50%);background:radial-gradient(circle,#2F6BFF44,transparent 65%);filter:blur(20px)}
+.iphone-3d{width:300px;height:615px;position:relative;transform-style:preserve-3d;transform:rotateY(-18deg) rotateX(6deg)}
+.iphone-face{position:absolute;inset:0;border-radius:55px;backface-visibility:hidden}
+.iphone-front{background:linear-gradient(145deg,#2A3448,#0B0E14);padding:12px;box-shadow:0 0 0 3px #3A465E,0 0 70px #2F6BFF44,0 40px 100px #000}
+.iphone-screen{position:relative;width:100%;height:100%;border-radius:44px;overflow:hidden;background:#000}
+.wallpaper{position:absolute;inset:0;background:linear-gradient(180deg,#1B2B4D,#2F6BFF 55%,#7C9EFF 80%,#C9A96A);opacity:0}
+.notch{position:absolute;top:12px;left:50%;transform:translateX(-50%);width:150px;height:27px;background:#000;border-radius:0 0 18px 18px;z-index:5;display:flex;align-items:center;justify-content:center;gap:8px}
+.notch-cam{width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#2A4A6A,#000)}
+.notch-speaker{width:45px;height:6px;border-radius:3px;background:#1c1c1e}
+.lock-screen{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;align-items:center;padding-top:60px;opacity:0}
+.lock-date{font-size:14px;color:#ffffffcc}.lock-time{font-size:78px;font-weight:800;line-height:1}
+.notif{width:88%;background:#ffffff1c;backdrop-filter:blur(20px);border-radius:16px;padding:10px 12px;display:flex;gap:10px;margin-top:12px;font-size:12px;transform:translateY(20px);opacity:0;align-items:center}
+.notif svg{color:#fff}
+.notif b{display:block;font-size:12px}
+.notif p{opacity:.85;font-size:12px}
+.home-bar{position:absolute;bottom:8px;width:130px;height:5px;background:#fff;border-radius:3px}
+.swipe-hint{position:absolute;bottom:28px;font-size:12px;opacity:.8}
+.home-screen{position:absolute;inset:0;padding:50px 18px 18px;display:none;z-index:3}
+.ios-status{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:700}
+.ios-status .status-icons{display:flex;gap:6px;align-items:center}
+.app{aspect-ratio:1;border-radius:16px;background:var(--c);display:flex;align-items:center;justify-content:center;transform:scale(0);color:#fff}
+.apps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+.dock{position:absolute;left:12px;right:12px;bottom:12px;background:#ffffff22;backdrop-filter:blur(20px);border-radius:24px;display:flex;justify-content:space-around;padding:10px;color:#fff}
+.dock div{display:flex}
+.flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+.iphone-back{background:linear-gradient(145deg,#1B2B4D,#2F6BFF 130%);transform:rotateY(180deg);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 0 3px #3A465E}
+.cam-block{position:absolute;top:22px;left:22px;width:130px;height:130px;background:#0B0E14cc;border-radius:32px;display:grid;grid-template-columns:1fr 1fr;place-items:center;padding:12px;gap:6px}
+.lens{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#2a4a6a 0 12%,#0a1a2a 13% 35%,#000 36%);box-shadow:0 0 0 6px #2c2c2e}
+.lidar{width:22px;height:22px;border-radius:50%;background:#1a1a1e}
+.flash-dot{width:18px;height:18px;border-radius:50%;background:#ffedb0}
+.apple{font-size:84px;color:#ffffffee}.iphone-label{margin-top:18px;letter-spacing:.25em;font-size:11px;color:#ffffffcc}
+.shadow-iphone{width:280px;height:30px;background:#000;border-radius:50%;filter:blur(18px);margin:26px auto 0;opacity:.7}
+.intro-title{margin-top:26px;font-size:clamp(28px,6vw,60px);font-weight:800;text-align:center;line-height:1;z-index:2}
+.intro-title span{display:block}.outline{color:transparent;-webkit-text-stroke:1.5px #9AA7BD}
+.intro-sub{color:var(--muted);letter-spacing:.18em;font-size:12px;margin-top:10px;text-transform:uppercase;z-index:2}
+#skip{position:absolute;bottom:22px;right:22px;background:#ffffff10;border:1px solid var(--line);color:var(--ink);padding:10px 18px;border-radius:100px;cursor:pointer;z-index:10}
+#skip:hover{background:#E8EDF5;color:#0B0E14}
+.mini-scene{perspective:1000px}
+.mini-iphone{width:230px;height:480px;background:#111;border-radius:44px;border:3px solid #3A465E;padding:10px;position:relative;box-shadow:0 30px 80px #00000088;transition:transform .15s ease-out}
+.mini-notch{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:110px;height:22px;background:#000;border-radius:0 0 14px 14px;z-index:2}
+.mini-screen{width:100%;height:100%;border-radius:34px;background:linear-gradient(180deg,var(--b1,#16233D),var(--b2,#2F6BFF));display:flex;flex-direction:column;align-items:center;padding-top:50px}
+.mini-time{font-family:var(--font-display);font-size:42px;font-weight:800}
+.mini-apps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+.mini-apps span{width:48px;height:48px;border-radius:14px;background:#ffffff26}

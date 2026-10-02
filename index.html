@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Коля — личный сайт</title>
+<meta name="description" content="Коля, 14 лет. Люблю технику Apple и iPhone 12. Связь — Telegram @eokaaa.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/iphone.css">
+<link rel="stylesheet" href="/assets/css/pages.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+<canvas id="particles"></canvas>
+<div class="cursor" id="cursor"></div>
+<div id="intro">
+<div class="intro-bg-grid"></div>
+<div class="intro-top">KOLYA • 14 • <span id="load-pct">0%</span></div>
+<div id="iphone-scene"><div class="glow"></div>
+<div class="iphone-3d" id="iphone3d">
+<div class="iphone-face iphone-front"><div class="iphone-screen">
+<div class="wallpaper"></div>
+<div class="notch"><div class="notch-cam"></div><div class="notch-speaker"></div></div>
+<div class="lock-screen" id="lockScreen">
+<div class="lock-date">2 октября, пятница</div>
+<div class="lock-time">9:41</div>
+<div class="notif" id="notif1"><svg class="icon"><use href="/assets/icons.svg#i-chat"/></svg><div><b>Коля</b><p>Привет! Это мой сайт</p></div></div>
+<div class="notif" id="notif2"><svg class="icon"><use href="/assets/icons.svg#i-bolt"/></svg><div><b>Система</b><p>Анимация загружена</p></div></div>
+<div class="home-bar"></div><div class="swipe-hint">подожди секунду — входим</div>
+</div>
+<div class="home-screen" id="homeScreen">
+<div class="ios-status"><span>9:41</span><span class="status-icons"><svg class="icon"><use href="/assets/icons.svg#i-signal"/></svg><svg class="icon"><use href="/assets/icons.svg#i-battery"/></svg></span></div>
+<div class="apps">
+<div class="app" style="--c:#2F6BFF"><svg><use href="/assets/icons.svg#i-camera"/></svg></div>
+<div class="app" style="--c:#3A7D44"><svg><use href="/assets/icons.svg#i-chat"/></svg></div>
+<div class="app" style="--c:#8E3B4D"><svg><use href="/assets/icons.svg#i-music"/></svg></div>
+<div class="app" style="--c:#7A5A2E"><svg><use href="/assets/icons.svg#i-map"/></svg></div>
+<div class="app" style="--c:#2E3A55"><svg><use href="/assets/icons.svg#i-game"/></svg></div>
+<div class="app" style="--c:#1A2233"><svg><use href="/assets/icons.svg#i-smile"/></svg></div>
+<div class="app" style="--c:#2E5560"><svg><use href="/assets/icons.svg#i-send"/></svg></div>
+<div class="app" style="--c:#6E2F38"><svg><use href="/assets/icons.svg#i-heart"/></svg></div>
+</div>
+<div class="dock"><div><svg><use href="/assets/icons.svg#i-phone"/></svg></div><div><svg><use href="/assets/icons.svg#i-compass"/></svg></div><div><svg><use href="/assets/icons.svg#i-mail"/></svg></div><div><svg><use href="/assets/icons.svg#i-note"/></svg></div></div>
+</div><div class="flash"></div>
+</div></div>
+<div class="iphone-face iphone-back" id="iphoneBack">
+<div class="cam-block"><div class="lens"></div><div class="lens"></div><div class="lidar"></div><div class="flash-dot"></div></div>
+<div class="apple">K</div><div class="iphone-label">iPhone 12 • KOLYA</div>
+</div>
+</div><div class="shadow-iphone"></div></div>
+<h1 class="intro-title"><span>КОЛЯ</span><span class="outline">14 ЛЕТ</span></h1>
+<div class="intro-sub">Личный сайт • iPhone 12 • Telegram @eokaaa</div>
+<button id="skip" type="button">пропустить</button>
+</div>
+<div id="site">
+<header class="site-header">
+<a class="logo" href="/">КОЛЯ<span>.</span></a>
+<nav class="site-nav">
+<a data-nav href="/about">обо мне</a>
+<a data-nav href="/projects">увлечения</a>
+<a data-nav href="/iphone">айфон</a>
+<a data-nav href="/contact" class="cta">написать</a>
+</nav></header>
+<section class="hero">
+<div class="hero-badge"><i></i>Коля • 14 лет • на связи в Telegram</div>
+<h2>ПРИВЕТ,<br>Я <span class="grad">КОЛЯ</span></h2>
+<p class="typed-wrap">мне 14 лет, я <span id="typed"></span><span class="caret">|</span></p>
+<div class="hero-btns"><a href="https://t.me/eokaaa" class="b1"><svg class="icon"><use href="/assets/icons.svg#i-tg"/></svg>написать в Telegram</a><a href="/about" class="b2">обо мне</a></div>
+<div class="marquee"><div class="marquee-inner">КОЛЯ • 14 ЛЕТ • IPHONE 12 • УЧЁБА • ВИДЕО • TELEGRAM @EOKAAA • </div></div>
+</section>
+<section><h3>КОРОТКО</h3>
+<div class="grid2">
+<div class="glass"><h4>Кто я</h4><p>Меня зовут <b>Коля, мне 14 лет</b>. Я школьник, интересуюсь техникой Apple — особенно iPhone 12. Здесь рассказываю о себе. <a href="/about">Подробнее</a></p>
+<div class="facts">
+<div class="fact"><svg><use href="/assets/icons.svg#i-user"/></svg><b>14 лет</b><p>учусь в школе</p></div>
+<div class="fact"><svg><use href="/assets/icons.svg#i-phone"/></svg><b>iPhone 12</b><p>любимый телефон</p></div>
+<div class="fact"><svg><use href="/assets/icons.svg#i-tg"/></svg><b>@eokaaa</b><p>мой Telegram</p></div>
+</div></div>
+<div class="glass photo-card"><div class="ava">К</div><p><b>Коля, 14</b></p><p>Связь — через Telegram: @eokaaa</p></div>
+</div></section>
+<section><h3>УВЛЕЧЕНИЯ</h3>
+<div class="proj-grid">
+<div class="proj"><div class="proj-img p1"><svg><use href="/assets/icons.svg#i-phone"/></svg></div><b>Техника Apple</b><p>Слежу за новинками, разбираюсь в iPhone.</p></div>
+<div class="proj"><div class="proj-img p2"><svg><use href="/assets/icons.svg#i-video"/></svg></div><b>Видео</b><p>Снимаю и монтирую ролики для себя.</p></div>
+<div class="proj"><div class="proj-img p3"><svg><use href="/assets/icons.svg#i-book"/></svg></div><b>Учёба</b><p>Школа, спорт и развитие.</p></div>
+</div>
+<div class="hero-btns"><a class="b2" href="/projects">подробнее</a></div>
+</section>
+<footer class="site-footer"><h3>СВЯЗЬ</h3>
+<div class="socials"><a href="https://t.me/eokaaa"><svg class="icon"><use href="/assets/icons.svg#i-tg"/></svg>Telegram @eokaaa</a></div>
+<p>© <span data-year>2026</span> Коля, 14 • <a href="/contact">контакты</a></p></footer>
+</div>
+<script src="/assets/js/common.js" defer></script>
+<script src="/assets/js/home.js" defer></script>
+</body></html>
