@@ -53,4 +53,32 @@
   document.querySelectorAll('[data-year]').forEach((el) => {
     el.textContent = String(new Date().getFullYear());
   });
+  /* Переключалка «Моё фото»: 1/2, кнопки назад/дальше */
+  document.querySelectorAll('.photo-card').forEach((card) => {
+    const photos = Array.from(card.querySelectorAll('.my-photo'));
+    if (photos.length < 2) return;
+    const cur = card.querySelector('[data-photo-cur]');
+    const prev = card.querySelector('.photo-prev');
+    const next = card.querySelector('.photo-next');
+    let i = 0;
+    const show = (n) => {
+      i = (n + photos.length) % photos.length;
+      photos.forEach((p, k) => p.classList.toggle('is-active', k === i));
+      if (cur) cur.textContent = String(i + 1);
+    };
+    if (prev) prev.addEventListener('click', () => show(i - 1));
+    if (next) next.addEventListener('click', () => show(i + 1));
+    /* свайп пальцем */
+    const frame = card.querySelector('.photo-frame');
+    let sx = null;
+    if (frame) {
+      frame.addEventListener('touchstart', (e) => { sx = e.touches[0].clientX; }, { passive: true });
+      frame.addEventListener('touchend', (e) => {
+        if (sx === null) return;
+        const dx = e.changedTouches[0].clientX - sx;
+        if (Math.abs(dx) > 35) show(i + (dx < 0 ? 1 : -1));
+        sx = null;
+      });
+    }
+  });
 })();
